@@ -123,14 +123,14 @@ void loop() {
       //Serial.println("LIVECOLOR: Color is RED"     ); 
       //wirelessSerial("LIVECOLOR: Color is RED"   );
       currentColor = "Red";
-      setMotor(1, 100, 11, 12);
+      setMotor(dir * -1, 100, 11, 12);
       break;
     
     case COLOR_BLUE:    
       //Serial.println("Color is BLUE"    ); 
       //wirelessSerial("Color is BLUE"   );
       currentColor = "Blue";
-      setMotor(-1, 100, 11, 12);
+      setMotor(dir * -1, 100, 11, 12);
       break;
   }
  // Serial.print("CURRENT:"+ currentColor+" ");
