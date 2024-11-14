@@ -124,6 +124,10 @@ void loop() {
       //wirelessSerial("LIVECOLOR: Color is RED"   );
       currentColor = "Red";
       setMotor(dir * -1, 100, 11, 12);
+      // turn [l/r?] when currentColor is RED
+      // setMotor(1, 200, 11, 12); 1st motor
+      // setMotor(-1, 100, 11, 12); 2nd motor
+      // sleep(x); ???
       break;
     
     case COLOR_BLUE:    
@@ -131,6 +135,8 @@ void loop() {
       //wirelessSerial("Color is BLUE"   );
       currentColor = "Blue";
       setMotor(dir * -1, 100, 11, 12);
+      // turn [r/l?] when CurrentColor is BLUE
+
       break;
   }
  // Serial.print("CURRENT:"+ currentColor+" ");
